@@ -1,0 +1,279 @@
+/* Entire Site */
+body {
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: #ffffff;
+}
+
+.invert {
+    filter: invert(100);
+}
+
+/* Navigation Bar */
+nav {
+    max-height: 10dvh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+
+/* Logo */
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+/* Home Button */
+.background {
+    width: 40px;
+    height: 40px;
+    background-color: #121212;
+    border-radius: 10dvh;
+    align-content: center;
+    text-align: center;
+}
+
+#home-button {
+    width: 20px;
+    height: 20px;
+}
+
+/* Search Bar */
+.search-background {
+    width: 380px;
+    height: 40px;
+    background-color: #121212;
+    border-radius: 10dvh;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#search-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#search-text {
+    font-size: 14px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+#search-text:hover {
+    color: #b3b3b3;
+}
+
+#line-size {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+
+#browse-icon {
+    margin-left: 3px;
+}
+
+/* Quick Links */
+.top-links {
+    text-decoration: none;
+    color: #b3b3b3;
+    margin-left: -10px;
+}
+
+/* Top Bar */
+#top-bar {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #b3b3b3;
+    margin-right: -75px;
+}
+
+/* Install App */
+#install-app {
+    display: flex;
+    flex-direction: row;
+}
+
+#download-icon {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+    margin-left: -0.7px;
+}
+
+#circle {
+    padding: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 5dvh;
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+    align-self: center;
+    margin-right: 15px;
+}
+
+#app-text {
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-right: -90px;
+}
+
+/* Sign Up */
+#sign-up {
+    text-decoration: none;
+    font-size: 13px;
+    color: #b3b3b3;
+    margin-right: -95px;
+    margin-top: -1px;
+}
+
+/* Log In Button */
+.big-white-button {
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 50px;
+    margin-right: -35px;
+}
+
+/* Your Library */
+#aside {
+    background-color: #121212;
+    border-radius: 5px;
+    width: 425px;
+    height: 690px;
+}
+
+.side-box {
+    background-color: #7c7c7c;
+    border-radius: 10px;
+    width: 400px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 12.5px;
+    text-align: left;
+}
+
+#library {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.top-one {
+    justify-content: left;
+    padding-top: -5px;
+    margin-left: 20px;
+}
+
+.middle {
+    margin: -15px;
+    margin-left: 20px;
+}
+
+.small-button {
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 140px;
+    text-align: center;
+    padding: 5px;
+}
+
+#policy-links {
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 20px;
+}
+
+#privacy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#checkbox {
+    width: 30px;
+    height: 30px;
+}
+
+#cookies {
+    color: #ffffff;
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+#lang-button {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    margin-left: 20px;
+}
+
+#world-icon {
+    filter: invert(100%);
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Popular Albums */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#popular-albums {
+    background-color: #121212;
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(8);
+}
+
+#albums {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.pics {
+    max-width: 125px;
+    max-height: 130px;
+}
+
+.album-grid h3 {
+    font-size: 15px;
+    word-break: break-all;
+}
