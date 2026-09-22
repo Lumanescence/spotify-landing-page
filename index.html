@@ -6,6 +6,9 @@
         <meta name="description" content="Spotify Landing Page Remake">
         <title>Spotify</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./global.css" type="text/css">
     </head>
     <body>
@@ -16,44 +19,53 @@
                 <img class="invert" id="logo" src="./Spotify/Spotify/Images/logos/spotify-logo.png" alt="Spotify Logo">
             </a>
 
-            <!-- Home Button -->
-            <a href="#" class="background">
-                <img class="invert" id="home-button" src="./Spotify/Spotify/Images/Icons/home-icon.png" alt="Home Page">
-            </a>
+            <div id="middle-nav">
+                <!-- Home Button -->
+                <a href="#" class="background">
+                    <img class="invert" id="home-button" src="./Spotify/Spotify/Images/Icons/home-icon.png" alt="Home Page">
+                </a>
 
-            <!-- Search Bar -->
-            <div class="search-background">
-                <img class="invert" id="search-icon" src="./Spotify/Spotify/Images/Icons/search-icon.png" alt="Search">
-                <p id="search-text">What do you want to play?</p>
-                <h2 id="line-size">|</h2>
-                <img class="invert" id="browse-icon" src="./Spotify/Spotify/Images/Icons/laundry-basket-icon.png" alt="Browse">
+                <!-- Search Bar -->
+                <div class="search-background">
+                    <img class="invert" id="search-icon" src="./Spotify/Spotify/Images/Icons/search-icon.png" alt="Search">
+                    <p id="search-text">What do you want to play?</p>
+                    <h2 id="line-size">|</h2>
+                    <img class="invert" id="browse-icon" src="./Spotify/Spotify/Images/Icons/laundry-basket-icon.png" alt="Browse">
+                </div>
             </div>
 
             <!-- Quick Links -->
-            <div id="top-links">
-                <a class="top-links" href="#">Premium</a>
-                <a class="top-links" href="#">Support</a>
-                <a class="top-links" href="#">Download</a>
-            </div>
-            <h1 id="top-bar">|</h1>
-            <a id="install-app" href="#">
-                <div id="circle">
-                    <img class="invert" id="download-icon" src="./Spotify/Spotify/Images/Icons/download-icon.png" alt="Install App"></id>
+            <div class="nav-right">
+                <div id="top-links">
+                    <a class="top-links" href="#">Premium</a>
+                    <a class="top-links" href="#">Support</a>
+                    <a class="top-links" href="#">Download</a>
                 </div>
-                <p id="app-text">Install App</p>
-            </a>
+                <h1 id="top-bar">|</h1>
+                <a id="install-app" href="#">
+                    <div id="circle">
+                        <img class="invert" id="download-icon" src="./Spotify/Spotify/Images/Icons/download-icon.png" alt="Install App"></id>
+                    </div>
+                    <p id="app-text">Install App</p>
+                </a>
 
-            <!-- Log in Button -->
-            <a id="sign-up" href="#">Sign up</a>
-            <div>
-                <a class="big-white-button" href="#">Log in</a>
+                <!-- Log in Button -->
+                <a id="sign-up" href="#">Sign up</a>
+                <div>
+                    <a class="big-white-button" href="#">Log in</a>
+                </div>
             </div>
         </nav>
 
         <main>
             <!-- Side Bar -->
             <aside id="aside">
-                <h3 id="library">Your Library</h3>
+                <div id="heading">
+                    <h3 id="library">Your Library</h3>
+                    <a href="#">
+                        <img id="plus" src="./Spotify/Spotify/Images/Icons/add-icon.png" alt="Add">
+                    </a>
+                </div>
                 
                 <!-- Create Playlist -->
                 <div class="side-box">
@@ -70,17 +82,19 @@
                 </div>
 
                 <!-- Policy Links -->
-                    <div id="policy-links">
+                    <div class="policy-links">
                         <a href="#">Legal</a>
                         <a href="#">Safety & Privacy Center</a>
                         <a href="#">Privacy Policy</a>
                         <a href="#">Cookies</a>
+                    </div>
+                    <div id="better-links">
                         <a href="#">About Ads</a>
                         <a href="#">Accessibility</a>
                         <a href="#">Notice at Collection</a>
                     </div>
                     <div id="privacy">
-                        <p>Your Privacy Choices</p>
+                        <p id="choices">Your Privacy Choices</p>
                         <img id="checkbox" src="./Spotify/Spotify/Images/Icons/check-box.png" alt="Toggle Privacy Choices">
                     </div>
                     <p id="cookies">Cookies</p>
@@ -96,8 +110,7 @@
 
         <!-- Popular Albums -->
             <section id="popular-albums">
-                <h1>Popular albums</h1>
-
+                <h1 id="pop-alb">Popular albums</h1>
                 <div id="albums">
                     <article class="album-grid">
                         <img class="pics" src="./Spotify/Spotify/Images/album-images/I'mTheProblem-MorganWallen.jpg" alt="I'm The Problem - Morgan Wallen">
@@ -111,7 +124,7 @@
                     </article>
                     <article class="album-grid">
                         <img class="pics" src="./Spotify/Spotify/Images/album-images/10HoursofContinuousRain...-WhiteNoiseRadiance,RainSounds.jpg" alt="10 Hours of Continuous Rain Sounds for Sleeping - White Noise Radiance, Rain Sounds">
-                        <h3>10 Hours of Continuous Rain Sounds for Sleeping</h3>
+                        <h3>10 Hours of Continuous Rain...</h3>
                         <h5>White Noise Radiance, Rain Sounds</h5>
                     </article>
                     <article class="album-grid">
@@ -136,7 +149,7 @@
                     </article>
                     <article class="album-grid">
                         <img class="pics" src="./Spotify/Spotify/Images/album-images/hamilton(originalbroadwaycastrecording)-LinManuelMiranda.jpg" alt="Hamilton (Original Broadway Cast Recording) - Lin-Manuel Miranda">
-                        <h3>Hamilton (Original Broadway Cast Recording)</h3>
+                        <h3>Hamilton (Original Broadway Cast...</h3>
                         <h5>Lin-Manuel Miranda</h5>
                     </article>
                     <article class="album-grid">
@@ -185,10 +198,14 @@
 
         <!-- Sign Up Free Banner -->
         <footer>
-
-
-            <!-- Sign Up Button -->
-            <a class="big-white-button" href="#">Sign up free</a>
+            <section id="footer">
+                <div id="bottom">
+                    <p id="top-text">Preview of Spotify</p>
+                    <p>Sign up to get unlimited songs and podcastswith occasional ads. No credit card needed.</p>
+                </div>
+                <!-- Sign Up Button -->
+                <a id="free" href="#">Sign up free</a>
+            </section>
         </footer>
     </body>
 </html>
